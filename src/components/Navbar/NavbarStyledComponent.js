@@ -1,4 +1,3 @@
-import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
 import _default from '../../themes/default';
 
@@ -27,7 +26,7 @@ export const NavbarContainer = styled.div`
   max-width: 1200px;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled.a`
     width: 80%;    
     padding: 0 6px;
     display: flex;
@@ -154,7 +153,7 @@ export const MobileMenuItems = styled.ul`
   height: 100%;
 `
 
-export const MobileMenuLink = styled(LinkR)`
+export const MobileMenuLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
@@ -205,7 +204,7 @@ export  const MobileLink = styled.a`
   }
 `;
 
-export const MobileNavLogo = styled(LinkR)`
+export const MobileNavLogo = styled.a`
   width: 80%;
   padding: 0 6px;
   display: flex;
